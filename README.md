@@ -12,7 +12,7 @@ Familar with google cloud
 
 - Create your kubernetes cluster on Google cloud
 - login to your cluster using the cloud console
-- Install Helm
+- Install Helm (install.sh)
 ``` 
 #!/usr/bin/env bash
 
