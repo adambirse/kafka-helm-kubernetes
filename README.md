@@ -36,9 +36,9 @@ echo "verify helm"
 # verify that helm is installed in the cluster
 kubectl get deploy,svc tiller-deploy -n kube-system
 ```
-- `helm repo add confluentinc https://raw.githubusercontent.com/confluentinc/cp-helm-charts/master`
+- `helm repo add confluent https://confluentinc.github.io/cp-helm-charts/`
 - `helm repo update`
-- `helm install --set cp-schema-registry.enabled=false,cp-kafka-rest.enabled=false,cp-kafka-connect.enabled=false confluentinc/cp-helm-charts`
+- `helm install --set cp-schema-registry.enabled=false,cp-kafka-rest.enabled=false,cp-kafka-connect.enabled=false confluent/cp-helm-charts`
 
 Thats It!
 
